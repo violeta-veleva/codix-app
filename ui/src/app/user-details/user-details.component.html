@@ -1,0 +1,57 @@
+<div class="container">
+  <div class="page">
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <h2>Personal Details</h2>
+        <form #userDetailsForm="ngForm" *ngIf="data" (ngSubmit)="onSubmit()">
+          <div class="form-group">
+            <label for="username">Nickname</label>
+            <input type="text" [(ngModel)]="data.nickname" class="form-control" id="username" name="username"
+                   #username="ngModel" placeholder="Enter username" required #name="ngModel" maxlength="40" (keyup)="onNicknameTyping()">
+            <div class="alert alert-danger" *ngIf="(nicknameExists$ | async).isUsed">Nickname exists!</div>
+            <div *ngIf="name.invalid && (name.dirty || name.touched)"
+                 class="alert alert-danger">
+              <div *ngIf="name.errors.required">
+                Nickname is required
+              </div>
+              <div *ngIf="name.errors.maxlength">
+                Nickname cannot contains more than 40 symbols
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email address</label>
+            <input type="email" [(ngModel)]="data.email" class="form-control" id="email" name="email"
+                   placeholder="Enter email" required email #email="ngModel" readonly>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone</label>
+            <input type="number" [(ngModel)]="data.phone" class="form-control" id="phone" name="phone"
+                   placeholder="Enter phone" required maxlength="15" #phone>
+            <div *ngIf="phone.invalid && (phone.dirty || phone.touched)"
+                 class="alert alert-danger">
+              <div *ngIf="phone.errors.required">
+                Phone is required
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="country">Country</label>
+            <select class="form-control" [(ngModel)]="data.countryId" id="country" name="countryId" required #country>
+              <option *ngFor="let country of countries" value="{{country.id}}">{{country.name}}</option>
+            </select>
+            <div *ngIf="country.invalid && (country.dirty || country.touched)"
+                 class="alert alert-danger">
+              <div *ngIf="country.errors.required">
+                Country is required
+              </div>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary"
+                  [disabled]="!userDetailsForm.form.valid || ((emailExists$ | async).isUsed) || ((nicknameExists$ | async).isUsed)">Save</button>
+        </form>
+      </div><!-- END of col-->
+    </div><!-- END of row-->
+  </div>
+</div><!-- END of container-->
+

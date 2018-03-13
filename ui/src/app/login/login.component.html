@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="page">
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <h2>Login</h2>
+        <form #loginForm="ngForm" (ngSubmit)="onSubmit()">
+          <div class="form-group">
+            <label for="email">Email address</label>
+            <input type="email" [(ngModel)]="data.email" class="form-control" id="email" name="email"
+                   placeholder="Enter email" required email>
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" [(ngModel)]="data.password" class="form-control" id="password" name="password"
+                   placeholder="Password" required>
+          </div>
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="remember-me" name="rememberMe" [(ngModel)]="data.rememberMe">
+            <label class="form-check-label" for="remember-me">Remember me</label>
+          </div>
+          <button type="submit" class="btn btn-primary" [disabled]="!loginForm.form.valid">Login</button>
+        </form>
+      </div><!-- END of col-->
+    </div><!-- END of row-->
+  </div>
+</div><!-- END of container-->

@@ -1,37 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="947b1a4d-d24a-4228-8ee4-f7b867add4d7" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/ui/src/app/app.store.ts" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ui/src/app/auth.guard.ts" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ui/src/app/country/country.model.ts" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ui/src/app/login/login.actions.ts" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ui/src/app/login/login.effects.ts" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ui/src/app/login/login.model.ts" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ui/src/app/login/login.reducer.ts" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ui/src/app/login/login.service.ts" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ui/src/app/logout/logout.actions.ts" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ui/src/app/logout/logout.effects.ts" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ui/src/app/logout/logout.service.ts" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ui/src/app/register/register.actions.ts" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ui/src/app/register/register.effects.ts" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ui/src/app/register/register.model.ts" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ui/src/app/register/register.reducer.ts" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ui/src/app/register/register.service.ts" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ui/src/app/user-details/user-details.actions.ts" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ui/src/app/user-details/user-details.effects.ts" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ui/src/app/user-details/user-details.reducer.ts" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ui/src/app/user-details/user-details.service.ts" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ui/src/app/user/user.ts" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ui/src/app/utils/validateEqual.directive.ts" />
-      <change beforePath="$PROJECT_DIR$/ui/.angular-cli.json" afterPath="$PROJECT_DIR$/ui/.angular-cli.json" />
-      <change beforePath="$PROJECT_DIR$/ui/package-lock.json" afterPath="$PROJECT_DIR$/ui/package-lock.json" />
-      <change beforePath="$PROJECT_DIR$/ui/package.json" afterPath="$PROJECT_DIR$/ui/package.json" />
-      <change beforePath="$PROJECT_DIR$/ui/src/app/app.component.html" afterPath="$PROJECT_DIR$/ui/src/app/app.component.html" />
-      <change beforePath="$PROJECT_DIR$/ui/src/app/app.component.ts" afterPath="$PROJECT_DIR$/ui/src/app/app.component.ts" />
-      <change beforePath="$PROJECT_DIR$/ui/src/app/app.module.ts" afterPath="$PROJECT_DIR$/ui/src/app/app.module.ts" />
-      <change beforePath="$PROJECT_DIR$/ui/src/styles.css" afterPath="$PROJECT_DIR$/ui/src/styles.css" />
-    </list>
+    <list default="true" id="947b1a4d-d24a-4228-8ee4-f7b867add4d7" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -48,7 +18,7 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
-              <caret line="10" column="25" lean-forward="true" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+              <caret line="10" column="25" lean-forward="false" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -116,7 +86,7 @@
     </dirStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/ui" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -271,16 +241,15 @@
       <option name="presentableId" value="Default" />
       <updated>1520759936343</updated>
       <workItem from="1520759938839" duration="102683000" />
-      <workItem from="1520949009584" duration="2823000" />
+      <workItem from="1520949009584" duration="3173000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="105506000" />
+    <option name="totallyTimeSpent" value="105856000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22544643" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -658,7 +627,7 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
-          <caret line="10" column="25" lean-forward="true" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+          <caret line="10" column="25" lean-forward="false" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
           <folding />
         </state>
       </provider>

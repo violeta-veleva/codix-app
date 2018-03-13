@@ -1,0 +1,18 @@
+<div class="main">
+  <ul class="nav float-left">
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/home" *ngIf="(loggedUser$ | async)">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/login" *ngIf="!(loggedUser$ | async)">Login</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/register" *ngIf="!(loggedUser$ | async)">Register</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/user-details" *ngIf="(loggedUser$ | async)">Edit Personal Details</a>
+    </li>
+  </ul>
+  <app-logout class="float-right" *ngIf="(loggedUser$ | async)"></app-logout>
+  <router-outlet></router-outlet>
+</div>

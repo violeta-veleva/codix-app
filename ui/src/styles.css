@@ -1,0 +1,23 @@
+.main {
+  padding: 10px;
+}
+
+.page {
+  padding: 20px 0;
+}
+
+h2{
+  color: #1197d5;
+}
+
+label {
+  color: #343434;
+}
+
+.ng-valid[required], .ng-valid.required {
+  border-left: 5px solid #42A948; /* green */
+}
+
+.ng-invalid.ng-touched:not(form) {
+  border-left: 5px solid #a94442; /* red */
+}
