@@ -28,7 +28,9 @@ const REGISTER_FAILED_MSG = 'Unsuccessful Registration';
   register$ = this.actions$
     .ofType(RegisterActions.REGISTER)
     .switchMap((action: CustomAction) => this.registerService.register(action.payload)
-      .map(() => this.registerActions.registerSuccess())
+      .map(() => {
+        return this.registerActions.registerSuccess()
+      })
       .catch(error =>  {
         this.toast.error(REGISTER_FAILED_MSG);
         return Observable.of(this.registerActions.registerFailed())

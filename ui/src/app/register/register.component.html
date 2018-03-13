@@ -73,6 +73,7 @@
           <div class="form-group">
             <label for="country">Country</label>
             <select class="form-control" [(ngModel)]="data.countryId" id="country" name="countryId" required #country>
+              <option value="null"></option>
               <option *ngFor="let country of countries" value="{{country.id}}">{{country.name}}</option>
             </select>
             <div *ngIf="country.invalid && (country.dirty || country.touched)"

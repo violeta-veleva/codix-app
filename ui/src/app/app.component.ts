@@ -16,17 +16,10 @@ export class AppComponent implements OnInit{
   public loggedUser$: Observable<UserIntrospect>;
 
   constructor(private store: Store<AppStore>,
-              private router: Router,
               private loginActions: LoginActions){}
 
   ngOnInit() {
     this.loggedUser$ = this.store.select(s => s.state.loggedUser);
-    this.loggedUser$.subscribe(user => {
-      if(user) {return this.onLoginSuccess()}
-    });
     this.store.dispatch(this.loginActions.getLoggedUser());
-  }
-  onLoginSuccess(): void {
-    this.router.navigate(['/home']);
   }
 }

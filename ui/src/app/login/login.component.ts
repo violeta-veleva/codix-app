@@ -13,7 +13,6 @@ export class LoginComponent implements OnInit {
   public data: Login;
   constructor(private store: Store<AppStore>,
               private loginActions: LoginActions) { }
-
   ngOnInit() {
     this.data = new Login(null, null, false);
   }
